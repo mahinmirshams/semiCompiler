@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1452944512 source:c:\users\np\desktop\mabani- final project\preprocessor-saturday-morning\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+
