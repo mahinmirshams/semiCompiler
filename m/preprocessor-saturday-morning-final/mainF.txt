@@ -1,9 +1,0 @@
-bool a = 7 ;
-if ( a == 8)
-	break;
-int z = 7;
-heloooo;
-bool b;
-int a = 7 ;
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
