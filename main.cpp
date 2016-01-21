@@ -6,6 +6,9 @@
 #define T_SIZE 50
 #define TEDDADEID 100
 #define TEDADE_NUM 500
+//uppercase ro handle nakardim!
+//"24." ghalate masal?
+//- va + adadha
 
 using namespace std;
 
@@ -473,7 +476,7 @@ ST*  typeDefiner(ST* mode,char* type){
                     mode=typeDefiner(mode->next,type);
                 else if((strcmp(mode->next->attribute,";")!=0) && (strcmp(mode->next->attribute,",")!=0)){
                     error=true;
-                    printf(" ERROR3 : LINE: %d\n", mode->next->lineNum );//error type
+                    printf("ERROR : LINE: %d expected ; after %s but there is %s\n",mode->lineNum,mode->attribute,mode->next->attribute);
                     while(mode->next!=NULL){
                         mode=mode->next;
                         if(strcmp(mode->attribute,";")==0)
@@ -555,7 +558,7 @@ ST * checkIdentifier(ST *mode){
         if(strcmp(mode->next->attribute,"=")==0){
             if(!mainExist){
                 error=true;
-                printf("not allowed!!!!\n");
+                printf("not allowed to value a id outside main!%d\n",mode->lineNum);
                 while(mode->next!=NULL){
                     mode=mode->next;
                     if(strcmp(mode->attribute,";")==0)
@@ -1028,7 +1031,7 @@ int main()
         printf("ERROR : didn't retrun anything\n");
         error=true;
     }
-   /* if(countBrace>0)
+    /*if(countBrace>0)
         printf("you didin't close {\n");
     else if(countBrace<0)
         printf("you didn't open {\n");*/
