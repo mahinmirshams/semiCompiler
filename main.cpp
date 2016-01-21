@@ -6,9 +6,7 @@
 #define T_SIZE 50
 #define TEDDADEID 100
 #define TEDADE_NUM 500
-//uppercase ro handle nakardim!
-//"24." ghalate masal?
-//- va + adadha
+
 
 using namespace std;
 
